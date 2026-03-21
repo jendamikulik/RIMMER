@@ -6488,7 +6488,7 @@ def main() -> None:
                 print(f"Horizon estimate: epsilon_horizon={he:.6g}")
 
 
-    wave = res.get("sat_wave", {})
+    """wave = res.get("sat_wave", {})
     if isinstance(wave, dict) and wave.get("enabled", False):
         print(f"WAVE: mode={wave.get('mode')}  visible_dim={wave.get('visible_dim')}  steps={wave.get('steps')}")
         print(f"      sat_mass={wave.get('sat_mass', 0.0):.6g}  frustration={wave.get('frustration_mass', 0.0):.6g}")
@@ -6501,7 +6501,7 @@ def main() -> None:
             for row in logs:
                 print("        step={step:04d} sat={sat_mass:.6g} frus={frustration_mass:.6g} "
                       "E[viol]={expected_violations:.6g} overlap={ground_overlap:.6g} "
-                      "winding={winding_proxy:.6g} mix={mix:.6g} event={last_event}".format(**row))
+                      "winding={winding_proxy:.6g} mix={mix:.6g} event={last_event}".format(**row))"""
 
 
     print("==============================================================\n")
